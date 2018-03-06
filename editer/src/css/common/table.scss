@@ -1,0 +1,159 @@
+$tdHeight:40px;
+$thHeight:40px;
+$thPaddingX:5px;
+$thPaddingY:5px;
+$tdPaddingX:5px;
+$tdPaddingY:5px;
+$tableBorderHeight:1px;
+
+.search-bar {
+  height:60px;
+}
+
+.empty-view {
+  text-align:center;
+  margin-top:100px;
+  .ivu-icon {
+    font-size:80px;
+  }
+}
+
+.td-operation {
+  white-space:nowrap;
+}
+
+.table-top-bar {
+  margin-bottom:$paddingY;
+  overflow:hidden;
+}
+
+.table-bottom-bar {
+  margin-top:$paddingY;
+  text-align:center;
+}
+
+.list-detail {
+  background-color:$grayLBg;
+  text-align:left;
+  padding:10px;
+  background-color:transparent;
+  table {
+    width:100%;
+    th {
+      border:0;
+      background-color:transparent;
+    }
+    td {
+      border:0;
+      background-color:transparent;
+      height:32px;
+    }
+  }
+}
+
+//reset iview
+.ivu-page-item:hover {
+  border-color:$themeColor;
+  color:$themeColor;
+  &.ivu-page-item-active {
+    a {
+      color:$white;
+    }
+  }
+  a {
+    color:$themeColor;
+  }
+}
+
+.ivu-page-item-active {
+  background-color:$themeColor;
+  border-color:$themeColor;
+}
+
+.ivu-page-options-elevator input:hover {
+  border-color:$themeColor;
+}
+
+.ivu-page-next:hover, .ivu-page-prev:hover {
+  border-color:$themeColor;
+}
+
+.ivu-tabs-nav .ivu-tabs-tab-active {
+  color:$themeColor;
+}
+
+.ivu-tabs-nav .ivu-tabs-tab:hover {
+  color:$themeColor;
+}
+
+.ivu-tabs-ink-bar {
+  background-color:$themeColor;
+}
+
+.ivu-spin {
+  margin-top:100px;
+  margin-bottom:100px;
+  position:relative;
+  .ivu-spin-main {
+    position:relative;
+    text-align:center;
+  }
+  .ivu-spin-dot {
+    display:inline-block;
+    background-color:$themeColor;
+  }
+}
+
+.ivu-table-wrapper {
+  table {
+    width:100%;
+    th{
+      height:48px;
+      color:$grayL;
+      background-color:$white;
+    }
+  }
+}
+
+.table-detail{
+  background-color:$white;
+  padding:20px;
+  table{
+    width:100%;
+    tr{
+      td{
+        line-height:30px;
+        &:nth-child(odd){
+          width:120px;
+          color:$grayL;
+        }
+      }
+    }
+  }
+}
+
+.muti-row-cell{
+  padding:5px 0;
+  line-height:20px;
+}
+
+.ivu-tabs-nav {
+  .ivu-tabs-tab {
+    padding:16px 0;
+  }
+  .ivu-tabs-ink-bar{
+    background-color:$orange;
+  }
+}
+
+.ivu-table{
+  font-size:$fontSize-m;
+}
+
+.ivu-table-cell{
+  .ivu-btn{
+    &:first-child{
+      padding-left:0;
+    }
+  }
+}

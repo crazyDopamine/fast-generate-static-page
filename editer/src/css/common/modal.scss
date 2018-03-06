@@ -1,0 +1,40 @@
+.login-modal {
+  .ivu-modal {
+    .ivu-modal-footer {
+      border-top:0;
+      padding:10px 60px 60px 60px;
+    }
+    .ivu-modal-body {
+      padding:20px 60px 10px 60px;
+    }
+    .ivu-modal-content {
+      border-radius:4px;
+    }
+  }
+}
+
+.ivu-modal{
+  .ivu-form {
+    .ivu-form-item-label {
+      text-align:left;
+    }
+  }
+}
+
+.ivu-modal{
+  .ivu-modal-content{
+    padding:0 20px;
+    .ivu-modal-header{
+      padding:15px 0;
+    }
+    .ivu-modal-body{
+      padding:15px 0;
+    }
+    .ivu-modal-footer{
+      padding:15px 0;
+    }
+  }
+  .ivu-select-dropdown{
+    position:fixed!important;
+  }
+}

@@ -1,0 +1,121 @@
+//reset iview btns
+.ivu-btn{
+  min-width:120px;
+  font-size:$fontSize-m;
+  line-height:20px;
+  padding:5px 20px;
+  text-align:center;
+}
+
+.ivu-btn-primary{
+  //&:hover{
+  //  border-color:$themeColor;
+  //  color:$themeColor;
+  //}
+}
+
+.ivu-btn-ghost:hover {
+  border-color:$themeColor;
+  color:$themeColor;
+}
+
+.ivu-btn-text{
+  min-width:0;
+}
+.ivu-btn-text:hover {
+  border-color:transparent;
+  color:$themeColor;
+}
+.ivu-btn-small{
+  font-size:12px;
+}
+.ivu-dropdown{
+  cursor:pointer;
+}
+
+.ivu-btn-large{
+  height:40px;
+  line-height:27px;
+  font-size:16px;
+}
+
+a {
+  cursor:pointer;
+  color:$baseFC;
+  &:-webkit-any-link {
+    &:hover {
+      color:$themeColor;
+    }
+  }
+  &:hover {
+    color:$themeColor;
+  }
+}
+
+.btn {
+  display:inline-block;
+  font-size:$fontSize-m;
+  cursor:pointer;
+  text-align:center;
+  border-radius:0;
+}
+
+.btn-normal {
+  min-width:160px;
+  line-height:28px;
+  padding:0 20px;
+}
+
+.btn-small {
+  line-height:28px;
+  padding:0 20px;
+}
+
+.btn-round {
+  border-radius:100%;
+}
+
+.btn-theme {
+  color:$white !important;
+  background-color:$themeColor!important;
+  border:1px solid $themeColor!important;
+  &:hover {
+    color:$themeColor !important;
+    background-color:$white!important;
+    border:1px solid $themeColor!important;
+  }
+}
+
+.btn-theme-border {
+  color:$themeColor ;
+  background-color:$white;
+  border:1px solid $themeColor;
+  &:hover {
+    color:$white ;
+    background-color:$themeColor;
+    border:1px solid $themeColor;
+  }
+}
+
+.btn-orange {
+  color:$white !important;
+  background-color:$orange!important;
+  border:1px solid $orange!important;
+  &:hover {
+    color:$orange !important;
+    background-color:$white!important;
+    border:1px solid $orange!important;
+  }
+}
+
+.btn-gray-border{
+  color:$gray;
+  background-color:$white;
+  border:1px solid $borderColor;
+  &:hover{
+    color:$white;
+    background-color:$gray;
+    border:1px solid $gray;
+  }
+}
+

@@ -1,0 +1,26 @@
+@import "../common/variables";
+@import "../common/reset";
+@import "../common/basic";
+@import "../common/table";
+@import "../common/form";
+@import "../common/btn";
+@import "../common/layout";
+@import "./layout";
+@import "../common/img";
+@import "../common/modal";
+
+//widget
+@import "../common/widget/header";
+@import "../common/widget/imgInput";
+
+@import "./modal/loginModal";
+
+//page
+@import "./page/main";
+
+//font
+@import "./icomoon/style.css";
+
+body{
+  background-color:$grayBg;
+}

@@ -1,0 +1,324 @@
+$fontColor:$grayD;
+$fontSize-s:12px;
+$fontSize-m:14px;
+$fontSize-l:16px;
+$fontSize-xl:18px;
+$fontSize-xxl:20px;
+$fontSize-max:36px;
+
+body{
+    font:$fontSize-m "microsoft yahei",tahoma,arial,"\5b8b\4f53";
+    color:$fontColor;
+    -webkit-font-smoothing: antialiased;
+}
+ol{
+    -webkit-padding-start:0;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+a:-webkit-any-link{
+  color:$btnFontColor;
+  &:hover{
+    color:$themeColor;
+  }
+}
+a:active{
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}
+ul,li{
+    list-style:none;
+    padding:0;
+}
+input{
+    -webkit-box-shadow:0 0 0 0 #FFF inset;
+    box-shadow:0 0 0 0 #FFF inset;
+    border:1px solid $borderColor;
+    padding:0 10px;
+}
+.font-weight{
+    font-weight:bold!important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.cursor-normal{
+    cursor: auto;
+}
+.fb {
+    font-weight: bold;
+}
+.clear {
+    clear: both;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.text-left{
+    text-align:left!important;
+}
+.text-right{
+    text-align:right!important;
+}
+.text-center{
+    text-align:center!important;
+}
+.text-middle{
+    vertical-align: middle!important;
+}
+.text-bottom{
+    vertical-align: text-bottom!important;
+}
+.hide{
+    display:none!important;
+}
+.white-border{
+    border-color:$white!important;
+}
+.border-right{
+    border-right:1px solid $borderColor;
+}
+.border-top{
+    border-top:1px solid $borderColor;
+}
+.border-bottom{
+    border-bottom:1px solid $borderColor;
+}
+.border-left{
+  border-left:1px solid $borderColor;
+}
+.border-right{
+  border-right:1px solid $borderColor;
+}
+.border-bottom-0{
+    border-bottom:0!important;
+}
+.border-left-0{
+    border-left:0!important;
+}
+.border-right-0{
+    border-right:0!important;
+}
+.border-top-0{
+    border-top:0!important;
+}
+.border-0{
+    border:none!important;
+}
+.border-left-red-5{
+    border-left:5px solid $red;
+    padding-left:10px;
+}
+.margin-bottom-0{
+    margin-bottom:0!important;
+}
+.margin-bottom-5{
+    margin-bottom:5px;
+}
+.margin-bottom-10{
+    margin-bottom:10px!important;
+}
+.margin-bottom-20{
+    margin-bottom:20px;
+}
+.margin-left-0{
+  margin-left:0px;
+}
+.margin-left-5{
+  margin-left:5px;
+}
+.margin-left-10{
+    margin-left:10px!important;
+}
+.margin-left-15{
+    margin-left:15px;
+}
+.margin-left-20{
+    margin-left:20px;
+}
+.margin-right-5{
+  margin-right:5px;
+}
+.margin-right-10{
+    margin-right:10px;
+}
+.margin-right-15{
+  margin-right:15px;
+}
+.margin-right-20{
+    margin-right:20px;
+}
+.margin-right-0{
+    margin-right: 0!important;
+}
+.margin-top-0{
+    margin-top: 0!important;
+}
+.margin-top-5{
+    margin-top:5px!important;
+}
+.margin-top-10{
+    margin-top:10px!important;
+}
+.margin-top-15{
+    margin-top:15px;
+}
+.margin-top-20{
+    margin-top:20px;
+}
+.padding-bottom-0{
+  padding-bottom:0 !important;
+}
+.padding-bottom-5{
+  padding-bottom:5px !important;
+}
+.padding-bottom-10{
+    padding-bottom:10px;
+}
+.padding-bottom-15{
+  padding-bottom:15px !important;
+}
+.padding-bottom-20{
+    padding-bottom:20px;
+}
+
+.padding-left-10{
+    padding-left:10px;
+}
+.padding-left-15{
+    padding-left:15px!important;
+}
+.padding-left-20{
+    padding-left:20px;
+}
+.padding-left-0{
+    padding-left:0 !important;
+}
+.padding-right-10{
+    padding-right:10px;
+}
+.padding-right-20{
+    padding-right:20px;
+}
+.padding-right-0{
+    padding-right:0 !important;
+}
+.padding-top-10{
+    padding-top:10px;
+}
+.padding-top-20{
+    padding-top:20px;
+}
+.padding-top-0{
+    padding-top:0 !important;
+}
+.padding-0{
+    padding:0 !important;
+}
+.display-flex{
+    display:flex;
+}
+.flex-grow-1{
+    flex-grow:1;
+}
+.flex-grow-2{
+    flex-grow:2;
+}
+.display-block{
+    display:inline-block;
+}
+.display-inline-block{
+    display:inline-block;
+}
+.clearfix {
+    display:block;
+}
+.clearfix:after {
+    content:'';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+img{
+  vertical-align: top;
+}
+
+.img{
+    border-radius: 50%;
+}
+.img-32{
+    @extend .img;
+    height:32px;
+    width:32px;
+}
+.img-48{
+    @extend .img;
+    height:48px;
+    width:48px;
+}
+.img-64{
+    @extend .img;
+    height:64px;
+    width:64px;
+}
+.img-100{
+    @extend .img;
+    height:100px;
+    width:100px;
+}
+.img-128{
+    @extend .img;
+    height:128px;
+    width:128px;
+}
+
+/* text overflow */
+.text-overflow{
+    display: block;
+    width:100%;
+}
+.per-width-100{
+    width:100%;
+}
+
+//font-size
+.fs-max{
+    font-size:$fontSize-max !important;
+}
+.fs-xxl{
+    font-size:$fontSize-xxl !important;
+}
+.fs-xl{
+    font-size:$fontSize-xl !important;
+}
+.fs-l{
+    font-size:$fontSize-l !important;
+}
+.fs-m{
+  font-size:$fontSize-m !important;
+}
+.fs-s{
+    font-size:$fontSize-s !important;
+}
+
+$fontColor:(fc-gray-d:$grayD,fc-gray:$gray,fc-gray-l:$grayL,fc-red:$red,fc-green:$green,fc-white:$white,fc-theme:$themeColor);
+@each $fontColor, $color in $fontColor {
+    .#{$fontColor} {
+        color: $color !important;
+    }
+}
+
+@for $i from 1 to 25{
+    .col-#{$i}{
+        float:left;
+        width:100% / 24 * $i;
+    }
+}

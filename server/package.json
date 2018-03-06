@@ -1,0 +1,26 @@
+{
+  "name": "recommend-service",
+  "version": "1.0.0",
+  "author": "DongWei",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "crypto": "0.0.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.5",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "redis": "^2.8.0",
+    "retry-as-promised": "^2.3.2",
+    "sequelize": "^4.34.1",
+    "serve-favicon": "^2.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "supervisor app.js"
+  }
+}

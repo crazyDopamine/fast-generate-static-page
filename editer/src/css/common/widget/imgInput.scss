@@ -1,0 +1,81 @@
+$imgWidth:70px;
+$imgHeight:70px;
+.img-input-container{
+  position:relative;
+  overflow:hidden;
+  .img-item{
+    position:relative;
+    float:left;
+    img{
+      width:$imgWidth;
+      height:$imgHeight;
+      margin-right:10px;
+      margin-top:10px;
+      cursor:pointer;
+    }
+    .item-remove{
+      background-color:$white;
+      position:absolute;
+      right:0;
+      top:0;
+      width:20px;
+      height:20px;
+      border-radius:10px;
+      fill:$red;
+    }
+    .file-movie{
+      cursor:pointer;
+      width:$imgWidth;
+      height:$imgHeight;
+      margin-right:10px;
+      margin-top:10px;
+      text-align:center;
+      line-height:$imgHeight;
+      border:1px solid $borderColor;
+      .icon-movie{
+        font-size:30px;
+      }
+    }
+  }
+  .img-input-add{
+    position:relative;
+    float:left;
+    width:$imgWidth;
+    height:$imgHeight;
+    border:1px solid $borderColor;
+    text-align:center;
+    margin-top:10px;
+    input[type=file]{
+      opacity:0;
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+    .icon-add{
+      position:absolute;
+      top:$imgHeight / 2 - 15;
+      left:$imgWidth / 2 - 15;
+      fill:$borderColor;
+    }
+  }
+}
+
+.img-pop{
+  .ivu-modal-footer{
+    display:none;
+  }
+  .ivu-modal-wrap{
+    z-index: $zIndex-max+1;
+  }
+  .ivu-modal-content{
+    background-color:transparent;
+  }
+  .ivu-modal-body{
+    padding:0;
+  }
+  //.ivu-modal-content{
+  //  background: transparent;
+  //}
+}

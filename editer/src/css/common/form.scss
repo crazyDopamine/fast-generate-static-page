@@ -1,0 +1,180 @@
+.form-area{
+  background-color:$white;
+  padding:30px 0;
+  &.half-input{
+    .ivu-input-wrapper{
+      width:50%;
+    }
+    .ivu-cascader{
+      width:50%;
+      .ivu-input-wrapper{
+        width:100%;
+      }
+    }
+    .ivu-select{
+      width:50%;
+    }
+  }
+  .form-row{
+    position:relative;
+    line-height:30px;
+    font-size:$fontSize-m;
+    &:not(:first-child){
+      margin-top:20px;
+    }
+  }
+  .btn-area{
+    margin-top:20px;
+    padding-left:12.5%;
+  }
+}
+
+.ivu-modal{
+  .form-area{
+    background-color:$white;
+    padding:0;
+    .form-row{
+      &:not(:first-child){
+        margin-top:20px;
+      }
+    }
+  }
+}
+
+.d-select.ivu-select{
+  height:35px;
+  line-height: 33px;
+  .ivu-select-selection{
+    padding:1px;
+    height:35px;
+  }
+}
+
+.ivu-checkbox-checked{
+  &:hover{
+    .ivu-checkbox-inner{
+      border-color: $orange;
+    }
+  }
+  .ivu-checkbox-inner{
+    border-color: $orange;
+    background-color: $orange;
+  }
+}
+
+.ivu-radio-checked{
+  .ivu-radio-inner{
+    border-color:$orange;
+    &:after{
+      background-color:$orange;
+    }
+  }
+}
+
+//.ivu-select-dropdown{
+//  position:absolute!important;
+//}
+
+.detail-area{
+  background-color:$white;
+  .detail-row{
+    overflow: hidden;
+    margin-bottom:20px;
+    position:relative;
+    line-height:30px;
+    font-size:$fontSize-m;
+    .detail-title{
+      display: inline-block;
+      width:30%;
+    }
+    .detail-content{
+      display: inline-block;
+      width:70%;
+    }
+  }
+}
+
+//reset iview
+.ivu-input:hover{
+  border-color:$themeColor;
+}
+.ivu-input:focus{
+  border-color:$themeColor;
+}
+.ivu-cascader-menu .ivu-cascader-menu-item-active{
+  color:$themeColor;
+}
+.ivu-select-selection:hover{
+  border-color:$themeColor;
+}
+.ivu-select-visible .ivu-select-selection{
+  border-color:$themeColor;
+}
+.ivu-switch-checked{
+  border-color: $themeColor;
+  background-color: $themeColor;
+}
+.hby-editor{
+  .ql-container{
+    min-height:500px;
+  }
+}
+.ivu-input-large {
+  font-size: 14px;
+  padding: 6px 7px;
+  height: 40px;
+}
+.ivu-checkbox-checked{
+  &:hover{
+    .ivu-checkbox-inner{
+      border-color:$lightThemeColor;
+    }
+  }
+  .ivu-checkbox-inner{
+    background-color:$themeColor;
+    border-color:$themeColor;
+    &:hover{
+    }
+  }
+}
+
+.ivu-modal{
+  .ivu-form-item{
+  }
+}
+
+.no-border{
+  input{
+    border:0;
+    &:focus{
+      box-shadow: 0 0 0 0px;
+    }
+  }
+}
+
+.ivu-switch-large{
+  margin-top:5px;
+  width:80px;
+  height:30px;
+  &.ivu-switch-checked{
+    .ivu-switch-inner{
+      left:10px;
+    }
+  }
+  .ivu-switch-inner{
+    left:36px;
+    line-height:26px;
+  }
+  &:after{
+    width:26px;
+    height:26px;
+  }
+  &.ivu-switch-checked:after{
+    left:50px;
+    width:26px;
+    height:26px;
+  }
+}
+.ivu-input-number{
+  width:100%;
+}

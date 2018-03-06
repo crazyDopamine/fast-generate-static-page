@@ -1,0 +1,22 @@
+header{
+  .header{
+    background-color:$white;
+    padding:20px 40px;
+    min-width: 1200px;
+    height:80px;
+    line-height:40px;
+    .header-btn-area{
+      float:right;
+    }
+  }
+}
+
+.ivu-badge-count{
+  height:16px;
+  border-radius:16px;
+  line-height:14px;
+  padding:0;
+  text-align:center;
+  min-width:16px;
+  font-size:10px;
+}

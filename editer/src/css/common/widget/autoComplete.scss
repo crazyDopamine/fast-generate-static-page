@@ -1,0 +1,37 @@
+$autoCompleteBg:$white;
+.auto-complete{
+  position:relative;
+  .auto-complete-input{
+    width:100%;
+    border-radius:4px;
+    z-index:$zIndex-component;
+  }
+  .auto-complete-mask{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:$zIndex-mask;
+  }
+  .auto-complete-options-container{
+    background-color:$autoCompleteBg;
+    position:absolute;
+    top:100%;
+    margin-top:-1px;
+    width:100%;
+    border:1px solid $borderColor;
+    z-index:$zIndex-component;
+    mix-height:180px;
+    overflow:auto;
+    li{
+      padding:0 10px;
+      line-height:28px;
+      cursor:pointer;
+      &:hover{
+        background-color:$blue;
+        color:$white;
+      }
+    }
+  }
+}

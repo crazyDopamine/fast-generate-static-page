@@ -1,0 +1,22 @@
+.login-modal {
+  .ivu-modal-wrap {
+    //background:#00205B;
+    //background:-moz-linear-gradient(top, #2E7BC3, #00205B);
+    //background:-webkit-gradient(linear, 0 0, 0 bottom, from(#2E7BC3), to(#00205B));
+    //background:-o-linear-gradient(top, #2E7BC3, #00205B);
+    // background-image:url("/static/imgs/login-bg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    .ivu-modal{
+      top:150px;
+    }
+  }
+}
+
+.login-block{
+  position:absolute;
+  z-index:-1;
+  background-color:$white;
+  opacity:0.2;
+}

@@ -1,0 +1,23 @@
+.map-container{
+  height:100%;
+  min-height:800px;
+  margin:0 -40px;
+}
+
+.BMap_pop{
+  :nth-child(9){
+    overflow:visible!important;
+  }
+}
+.map-info-title{
+  background-color:$themeColor;
+  line-height:50px;
+  color:$white;
+  margin:-16px -16px 0 -16px;
+  padding:0 16px;
+}
+.map-info-content{
+  li{
+    line-height:30px;
+  }
+}
