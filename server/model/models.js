@@ -3,10 +3,9 @@
  */
 var Sequelize = require('sequelize');
 var modelConfig = require('../model/modelConfig');
-var sequelize = new Sequelize('fgsp', 'postgres', 'dw2587758', {
-  host: 'localhost',
-  port: '5432',
-  dialect: 'postgres',
+var sequelize = new Sequelize('fgsp', 'newtank', 'newtank', {
+  host: '120.55.76.1',
+  dialect: 'mysql',
   pool: {
     min: 5,
     max: 20,
