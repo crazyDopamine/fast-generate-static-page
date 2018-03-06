@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path')
 var router = express();
 var models = require('../model/models');
 var tokenModule = require('../model/token');
@@ -12,7 +13,7 @@ var request = function (req, res, next, callback) {
 
 router.post('/publish', function (req, res, next) {
   request(req, res, next, function (params, req, res, next) {
-    let path = '../staticPage/source/_draft/'
+    let path = __dirname + '/../../staticPage/source/_draft/'
     let fileName = params.fileName
     path += (fileName ? fileName : 'temp') + '.md'
     fs.writeFile(path, params.content, (err) => {
@@ -23,7 +24,7 @@ router.post('/publish', function (req, res, next) {
           code: global.FailCode
         })
       } else {
-        path = '../staticPage/source/_posts/'
+        path = __dirname + '/../../staticPage/source/_posts/'
         path += (fileName ? fileName : 'temp') + '.md'
         fs.writeFile(path, params.content, (err) => {
           console.log(err)
@@ -45,7 +46,7 @@ router.post('/publish', function (req, res, next) {
 
 router.post('/save', function (req, res, next) {
   request(req, res, next, function (params, req, res, next) {
-    let path = '../staticPage/source/_draft/'
+    let path = __dirname + '/../../staticPage/source/_draft/'
     let fileName = params.fileName
     path += (fileName ? fileName : 'temp') + '.md'
     fs.writeFile(path, params.content, (err) => {
@@ -66,7 +67,7 @@ router.post('/save', function (req, res, next) {
 
 router.post('/unPublish', function (req, res, next) {
   request(req, res, next, function (params, req, res, next) {
-    let path = '../staticPage/source/_posts/'
+    let path = __dirname + '/../../staticPage/source/_draft/'
     let fileName = params.fileName
     path += (fileName ? fileName : 'temp') + '.md'
     fs.unlink(path, (err) => {
@@ -88,7 +89,7 @@ router.post('/unPublish', function (req, res, next) {
 
 router.get('/get', function (req, res, next) {
   request(req, res, next, function (params, req, res, next) {
-    let path = '../staticPage/source/_draft/'
+    let path = __dirname + '/../../staticPage/source/_draft/'
     let fileName = params.fileName
     path += (fileName ? fileName : 'temp') + '.md'
     fs.readFile(path, (err, data) => {
@@ -111,7 +112,8 @@ router.get('/get', function (req, res, next) {
 
 router.get('/fileList', function (req, res, next) {
   request(req, res, next, function (params, req, res, next) {
-    let path = '../staticPage/source/_draft/'
+    let path = __dirname + '/../../staticPage/source/_draft/'
+    console.log(path)
     fs.readdir(path, (err, files) => {
       if (err) {
         res.json({
